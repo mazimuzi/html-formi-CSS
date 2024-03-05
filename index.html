@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>HTML Formi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
 
 <form action="/submit_form" method="post">
-  <table>
-    <tr>
-      <td>
+  
         <fieldset>
           <legend>Contact Information:</legend>
-          First name:
+          <div class="miucontti">
+            First name:
           <input type="text" name="firstname"><br>
           Last name:
           <input type="text" name="lastname"><br>
@@ -16,28 +19,27 @@
           <input type="email" name="email"><br>
           Telephone:
           <input type="telnum" name="telephone"><br>
-          Preferred contact method:<br>
+          
+          <div>
+            <br>Preferred contact method:<br>
           <input type="radio" name="contactmethod" value="Email"> Email<br>
           <input type="radio" name="contactmethod" value="Telephone"> Telephone<br>
+          </div>
+        </div>
+          
         </fieldset>
-      </td>
-      
-    </tr>
-    <tr>
-        <td>
             <fieldset>
               <legend>Feedback:</legend>
-              Message subject:
-              <textarea name="subject" rows="1" cols="25"></textarea><br>
-              <textarea name="content" cols="42" rows="10"></textarea>
+              <div>
+                Message subject:
+              <textarea name="subject" rows="1" cols="29"></textarea><br>
+              <textarea name="content" cols="50" rows="15"></textarea>
               <br>
                 Attach a file:
                 <input type="file" name="fileupload"><br>
                  <input type="submit" value="Send">
+              </div>
             </fieldset>
-          </td>
-    </tr>
-  </table>
   
 </form>
 
