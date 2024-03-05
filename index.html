@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/submit_form" method="post">
+  <table>
+    <tr>
+      <td>
+        <fieldset>
+          <legend>Contact Information:</legend>
+          First name:
+          <input type="text" name="firstname"><br>
+          Last name:
+          <input type="text" name="lastname"><br>
+          Email:
+          <input type="email" name="email"><br>
+          Telephone:
+          <input type="telnum" name="telephone"><br>
+          Preferred contact method:<br>
+          <input type="radio" name="contactmethod" value="Email"> Email<br>
+          <input type="radio" name="contactmethod" value="Telephone"> Telephone<br>
+        </fieldset>
+      </td>
+      
+    </tr>
+    <tr>
+        <td>
+            <fieldset>
+              <legend>Feedback:</legend>
+              Message subject:
+              <textarea name="subject" rows="1" cols="25"></textarea><br>
+              <textarea name="content" cols="42" rows="10"></textarea>
+              <br>
+                Attach a file:
+                <input type="file" name="fileupload"><br>
+                 <input type="submit" value="Send">
+            </fieldset>
+          </td>
+    </tr>
+  </table>
+  
+</form>
+
+</body>
+</html>
